@@ -247,7 +247,7 @@ const Mint = ({ onNotify }) => {
     <>
       {/* <!-- Mint --> */}
       <section
-        className="relative pb-10 pt-20 md:pt-31 min-h-screen flex justify-center items-center"
+        className="relative pb-10 pt-20 md:pt-31 min-h-screen flex justify-center items-center overflow-x-hidden"
         id="home"
       >
         <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 block h-full">
