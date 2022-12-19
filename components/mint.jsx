@@ -10,8 +10,7 @@ const Mint = ({ onNotify }) => {
   const { signerAddress } = useSelector((state) => state.counter);
 
   const contractAddress = process.env.CONTRACT_ADDRESS;
-  //TODO: Switch network
-  const network = "goerli";
+  const network = "homestead";
 
   const [maxSupply, setMaxSupply] = useState(5555);
   const [totalSupply, setTotalSupply] = useState(0);
@@ -218,8 +217,7 @@ const Mint = ({ onNotify }) => {
 
       let chainId = await ethereum.request({ method: "eth_chainId" });
 
-      //TODO: Switch chain to 0x1
-      const homesteadChainId = "0x5";
+      const homesteadChainId = "0x1";
 
       if (chainId !== homesteadChainId) {
         onNotify("You are not connected to the Mainnet!");
